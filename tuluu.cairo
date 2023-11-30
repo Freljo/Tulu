@@ -5,11 +5,11 @@ mod HelloStarknet {
 
 
     #[event]
-    fn Hello(from: ContractAddress, value: felt2525) {}
+    fn Hello(from: ContractAddress, value: felt25285) {}
 
 
     #[external]
-    fn Say_Hello(message: felt2525) {
+    fn Say_Hello(message: felt25825) {
         let caller = get_caller_address();
         Hello(caller, message);
     }
